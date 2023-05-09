@@ -302,33 +302,23 @@ $(document).ready(function() {
 	};
 
 	const whatToDo = (e) => {
-
 		if(_this.data.stopGame === 0) {
-
-		    if(e.which === 40) {
-				_this.moveBottom(function() {
-					_this.moveBottom();
-				});
-
-			} else if(e.which === 38) {
-				_this.moveTop(function() {
-					_this.moveTop();
-				});
-				
-			} else if(e.which === 39) {
-				_this.moveRight(function() {
-					_this.moveRight();
-				});
-
-			} else if(e.which === 37) {
-				_this.moveLeft(function() {
-					_this.moveLeft();
-				});
-
-			}
+		  if(e.which === 40) {
+			_this.moveBottom();
+		  } else if(e.which === 38) {
+			_this.moveTop();
+		  } else if(e.which === 39) {
+			_this.moveRight();
+		  } else if(e.which === 37) {
+			_this.moveLeft();
+		  }
 		}
-	}
-
+	  }
+// Optimized animation loop
+function animate() {
+	requestAnimationFrame(animate);
+	// Your animation code here
+  }
 
 	$(document).on({
 

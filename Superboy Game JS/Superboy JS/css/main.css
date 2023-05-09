@@ -29,11 +29,11 @@ html, body {
 }
 
 .logo img {
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
+  transition: 0.1s ;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
   max-width: 100%;
   cursor: pointer;
 }
@@ -64,7 +64,7 @@ svg {
 	top: 100px;
 	display: none;
 	width: 400px;
-	height: 488px;
+	height: 400px;
 }
 .star {
 	position: absolute;
